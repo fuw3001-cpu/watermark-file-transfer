@@ -163,3 +163,9 @@ GIF 命令验证沿用 `SHIYING_FFMPEG` 和 `DesktopConversionTest`，可选 `SH
 交付用安装包复制到 `dist/shiying-0.9.9-arm64.apk`（忽略提交），避免后续 Gradle 重建时清理旧的下载文件。
 
 实况图片验证可设置 `SHIYING_MOTION_QA_DIR` 后运行 `MotionPhotoTest`，保留 JPEG+MP4 样本；用独立图片阅读器检查封面，用 `GCamera:MicroVideoOffset` 提取尾部视频后完整解码。此检查不等于厂商相册兼容性验收。`ImageRepairDeviceTest` 覆盖局部水印修复、原图/选区外像素、选区面积限制和取消，需要手机执行。
+
+## 开源许可
+
+拾影的原创代码采用 [Apache License 2.0](LICENSE)。
+
+第三方代码与依赖适用各自的许可。许可证和来源见 [第三方声明](THIRD_PARTY_NOTICES.md)。
